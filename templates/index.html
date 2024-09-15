@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Upload Files</title>
+</head>
+
+<body>
+    <h1>Upload HTML and Excel Files</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="html_file">HTML File:</label>
+        <input type="file" id="html_file" name="html_file" required><br><br>
+        <label for="excel_file">Excel File:</label>
+        <input type="file" id="excel_file" name="excel_file" required><br><br>
+        <label for="from_text">FROM (Text to be replaced):</label>
+        <input type="text" id="from_text" name="from_text"><br><br>
+        <label for="to_text">TO (Replacement text):</label>
+        <input type="text" id="to_text" name="to_text"><br><br>
+        <label for="remove_preheader">Check the box if you want to remove preheader from HTML build:</label>
+        <input type="checkbox" id="remove_preheader" name="remove_preheader"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+
+</html>
